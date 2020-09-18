@@ -12,4 +12,4 @@ for listaCep in cep:
         print('XML : \n', r.text)
         print()
     else:
-        print('Nao houve sucesso na requisicao.')
+        print('Não houve sucesso na requisição.')
