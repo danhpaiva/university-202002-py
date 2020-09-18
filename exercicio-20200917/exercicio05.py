@@ -10,7 +10,7 @@ if (r.status_code == 200):
     print('A requisição foi atendida. Verifique na pasta um arquivo .html gerado pelo programa.\nCódigo : ', r.status_code)
     print()
 else:
-    logRequisicao.write("Erro: " + r.status_code)
-    print('Não houve sucesso na requisição.')
+    logRequisicao.write("Código do Erro: " + str(r.status_code))
+    print('Não houve sucesso na requisição. Verifique na pasta um arquivo .html com o código do erro.')
 
 logRequisicao.close()
