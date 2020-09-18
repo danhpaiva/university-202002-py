@@ -11,4 +11,4 @@ if (r.status_code == 200):
     print('XML : \n', r.text)
     print()
 else:
-    print('Não houve sucesso na requisicao.')
+    print('Não houve sucesso na requisição.')
