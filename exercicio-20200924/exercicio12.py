@@ -17,7 +17,7 @@ def realizarRequisicao(url, medida):
             print('Teste número:' + str(i) +
                   ' não houve sucesso na requisição.')
 
-        time.sleep(10)
+        time.sleep(15)
         i += 1
 
 
