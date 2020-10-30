@@ -1,0 +1,7 @@
+CREATE TABLE "Sensores" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"temperature"	TEXT NOT NULL,
+	"humidity"	TEXT NOT NULL,
+	"date"	TEXT NOT NULL,
+	PRIMARY KEY("id")
+);
