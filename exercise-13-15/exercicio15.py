@@ -5,7 +5,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 import requests
 
-url = 'https://api.thingspeak.com/channels/1158487/feeds.json?api_key=8FU1WASMDZXLXZ76&results=15'
+url = 'https://api.thingspeak.com/channels/1211372/feeds.json?api_key=8ZPLECEO2HMX8JFV&results=2'
 
 
 r = requests.get(url)
