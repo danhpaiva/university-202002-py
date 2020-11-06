@@ -1,0 +1,38 @@
+//Exercício 09 - Daniel Paiva
+int pinSensor = A0;
+
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(pinSensor, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int valor = analogRead(pinSensor);
+  
+  int celsius = map(((valor - 20) * 3.04), 0, 1023, -40, 125);
+  
+  Serial.print(" Temperatura em C : ");
+  
+  Serial.println(celsius);
+  
+  delay(1000);
+  
+  if (celsius <= 15){
+     digitalWrite(13, HIGH);
+     digitalWrite(7, LOW);
+     digitalWrite(10, LOW);
+  } else if (celsius < 24){
+     digitalWrite(13, LOW);
+     digitalWrite(7, LOW);
+     digitalWrite(10, HIGH);
+  } else {
+    digitalWrite(13, LOW);
+    digitalWrite(7, HIGH);
+    digitalWrite(10, LOW);
+  }
+}
