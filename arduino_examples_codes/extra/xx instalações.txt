@@ -1,0 +1,18 @@
+python --version
+ conda create --name publico37 python=3.7
+ conda env list 
+
+Instalar no ambiente public37:
+
+activate publico37
+pip install --upgrade pip wheel setuptools
+
+
+pip install --upgrade mqtt-client
+pip install thingspeak==0.1.1
+pip install requests
+pip install urllib3
+
+
+Sair do ambiente
+deactivate publico37
