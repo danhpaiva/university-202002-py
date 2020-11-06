@@ -29,7 +29,7 @@ class MySearch(GridLayout):
         self.add_widget(self.inside)
 
         self.buscar = Button(text="Buscar", font_size=50, size_hint=(.2, .5))
-        self.buscar.bind(on_press=self.pressionar)
+        self.buscar.bind(on_press=self.pressionar) # Ignorar erro
         self.add_widget(self.buscar)
         
 
