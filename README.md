@@ -1,6 +1,6 @@
-# :smile: University - Period 2020/02
+<h1> :smile: University - Period 2020/02 </h1>
 
-## What will you find in this repository?
+## :scroll: What will you find in this repository?
 
 Here you will find some codes of the discipline: ""Distributed Systems & mobile" <br>
 These are codes in <strong> .py </strong> that I made in the second half of 2020. <br>
